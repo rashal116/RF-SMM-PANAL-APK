@@ -77,6 +77,7 @@ function smmApiProxyPlugin() {
 
 export default defineConfig(() => {
   return {
+    base: './',
     plugins: [react(), tailwindcss(), smmApiProxyPlugin()],
     resolve: {
       alias: {
